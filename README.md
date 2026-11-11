@@ -7,12 +7,14 @@ Entry for make.fun bounty **news-summary-01** — write the best summary of
 
 `main.py` (Python 3.13, standard library only) copies `summary.txt` — one
 summary, in English, of the world's news of Wednesday 11 November 2026 —
-to `/output/entry.txt`. The summary is 1,986 characters, UTF-8, covering
-the Abu Dhabi Russia-Ukraine-US talks, the COP31 leaders' summit in
-Antalya, Anthropic's IPO pricing, US October CPI, the DR Congo Ebola
-outbreak, the RAF Fairford plot charges, the El Salvador operation in
-Haiti, US-China trade, the Krakow shooting and the Seongnam bus crash,
-each with its source named.
+to `/output/entry.txt`. Version 2 (1,984 characters, UTF-8) opens with a
+one-sentence lede naming the day's three biggest stories, then covers ten
+stories in order of importance: the Abu Dhabi Russia-Ukraine-US talks, the
+COP31 leaders' summit in Antalya, Anthropic's IPO pricing, US October CPI,
+the DR Congo Ebola outbreak, the RAF Fairford plot charges, the El Salvador
+operation in Haiti, the House vote ending the Hegseth impeachment effort,
+the Krakow shooting and the Seongnam bus crash — each with figures and its
+source named, and anything unconfirmed said to be so.
 
 The program runs with no network and is deterministic: both runs write
 identical bytes.
