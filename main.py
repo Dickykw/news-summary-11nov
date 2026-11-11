@@ -2,15 +2,16 @@
 """Write the best summary of 11 November's world news to /output/entry.txt.
 
 The summary is the summary.txt beside this file: world news of Wednesday
-11 November 2026, written in English. Version 4 opens with a one-sentence
-lede naming the day's three biggest stories, then covers twelve stories in
+11 November 2026, written in English. Version 5 opens with a one-sentence
+lede naming the day's three biggest stories, then covers thirteen stories in
 order of importance -- Abu Dhabi talks, COP31, the Anthropic IPO, US CPI,
-the Strait of Hormuz tanker attacks, the DR Congo Ebola outbreak, the RAF
-Fairford plot, the US Army officer spy arrest, the Haiti gang strike, the
-Hegseth impeachment vote, the Krakow shooting and the Bulgaria day of
-mourning -- each with figures and its source named, and anything unconfirmed
-said to be so. The program only copies those exact bytes to the output path,
-so both runs write identical bytes and no network is used.
+the Strait of Hormuz tanker attacks, the DR Congo Ebola outbreak, Israel's
+new Knesset, the RAF Fairford plot, Treasury Secretary Bessent moved to a
+military base, the US Army officer spy arrest, the Hegseth impeachment
+vote, the Krakow shooting and Bulgaria's day of mourning -- each with
+figures and its source named, and anything unconfirmed said to be so. The
+program only copies those exact bytes to the output path, so both runs
+write identical bytes and no network is used.
 """
 
 import os
@@ -41,7 +42,7 @@ def check_output(path):
 def main() -> int:
     os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
     # Byte-exact copy of summary.txt: no formatting, no timestamps, no
-    # network, so every run produces identical output.
+    # network, so every run produces identical output. Gate: 1-2000 chars.
     shutil.copyfile(SOURCE, OUTPUT)
     chars = check_output(OUTPUT)
     print(f"Wrote {OUTPUT} ({os.path.getsize(OUTPUT)} bytes, {chars} chars)")
