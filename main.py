@@ -2,15 +2,15 @@
 """Write the best summary of 11 November's world news to /output/entry.txt.
 
 The summary is the summary.txt beside this file: world news of Wednesday
-11 November 2026, written in English. Version 3 opens with a one-sentence
-lede naming the day's three biggest stories, then covers eleven stories in
+11 November 2026, written in English. Version 4 opens with a one-sentence
+lede naming the day's three biggest stories, then covers twelve stories in
 order of importance -- Abu Dhabi talks, COP31, the Anthropic IPO, US CPI,
-the DR Congo Ebola outbreak, the RAF Fairford plot, the Haiti gang strike,
-the Hegseth impeachment vote, the Krakow shooting, the Bulgaria day of
-mourning and the Seongnam crash -- each with figures and its source named,
-and anything unconfirmed said to be so. The program only copies those exact
-bytes to the output path, so both runs write identical bytes and no network
-is used.
+the Strait of Hormuz tanker attacks, the DR Congo Ebola outbreak, the RAF
+Fairford plot, the US Army officer spy arrest, the Haiti gang strike, the
+Hegseth impeachment vote, the Krakow shooting and the Bulgaria day of
+mourning -- each with figures and its source named, and anything unconfirmed
+said to be so. The program only copies those exact bytes to the output path,
+so both runs write identical bytes and no network is used.
 """
 
 import os
